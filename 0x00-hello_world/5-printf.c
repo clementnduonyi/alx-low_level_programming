@@ -1,6 +1,5 @@
 #include <stdio.h>
 /*
- *
  * main - Entry point
  *
  * Description: prints string of text to the output.
