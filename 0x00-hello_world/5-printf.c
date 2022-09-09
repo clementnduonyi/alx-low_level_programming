@@ -3,6 +3,8 @@
  *
  * main - Entry point
  *
+ * Description: prints string of text to the output.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
