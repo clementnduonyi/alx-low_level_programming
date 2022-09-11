@@ -2,7 +2,7 @@
 /**
  * main - Prints the alphabets in lowercase except e and q
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
