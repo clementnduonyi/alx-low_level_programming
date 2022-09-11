@@ -8,13 +8,16 @@ int main(void)
 {
 	int single_digit;
 
-	for (single_digit = 0; single_digit < 10; single_digit++)
+	while  (single_digit < 9)
 	{
 		putchar((single_digit % 10) + '0');
+		if (single_digit == 9)
+			continue;
 		putchar(',');
 		putchar(' ');
+		single_digit++;
 	}
-
+	
 	putchar('\n');
 
 	return (0);
