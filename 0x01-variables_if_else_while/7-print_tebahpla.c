@@ -8,8 +8,10 @@ int main(void)
 {
 	char reverseAlphabet;
 
-	for (reverseAlphabet = 'z'; reverseAlphabet >= 'a'; --reverseAlphabet)
+	for (reverseAlphabet = 'z'; reverseAlphabet >= 'a'; reverseAlphabet--)
 		putchar(reverseAlphabet);
-	putchar('\n');	
+
+	putchar('\n');
+
 	return (0);
 }
