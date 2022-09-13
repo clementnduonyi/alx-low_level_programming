@@ -1,6 +1,7 @@
-#include <stdio.h>
+#ifndef _MAIN_M_
+#define _MAIN_M_
 
-void _putchar(char c)
-{
-	putchar(c);
-}
+
+int _putchar(char c);
+
+#endif /*_MAIN_M_*/
