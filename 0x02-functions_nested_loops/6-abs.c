@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _abs - Computes the absolute value of an integer
+ *@n: parmeter for integer
  *
  * Return: Always 0
  */
