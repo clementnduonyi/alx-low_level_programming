@@ -10,7 +10,7 @@
  *
  * Return: Always 0;
  */
- int fizz_buzz(void)
+void fizz_buzz(void)
 {
 	int nums;
 
@@ -34,5 +34,4 @@
 		}
 	}
 	printf("\n");
-	return (0);
 }
