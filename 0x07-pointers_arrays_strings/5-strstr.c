@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * *_strstr - ocates a substring
+ * *_strstr - Locates a substring
  * @haystack: main string
  * @needle: substring
  *
- * Return Pointer to the location of the string
+ * Return: Pointer to the location of the string
  */
 char *_strstr(char *haystack, char *needle)
 {
