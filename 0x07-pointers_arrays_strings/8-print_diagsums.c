@@ -15,15 +15,15 @@ void print_diagsums(int *a, int size)
 	int first_sum = 0;
 	int second_sum = 0;
 
-	while (i <= size * size)
+	while (i <= (size * size))
 	{
 		first_sum += a[i];
-		i += size + 1;
+		i = i + size + 1;
 	}
-	while (j < size * size - j)
+	while (j < size * j)
 	{
 		second_sum += a[j];
-		j += j;
+		j += j + j;
 	}
 
 	printf("%d, %d\n", first_sum, second_sum);
