@@ -17,10 +17,10 @@ void print_diagsums(int *a, int size)
 
 	while (i <= (size * size))
 	{
-		first_sum += a[i];
+		first_sum = first_sum + a[i];
 		i = i + size + 1;
 	}
-	while (j < size * size -1)
+	while (j < size * size - 1)
 	{
 		second_sum += a[j];
 		j += j + size - 1;
