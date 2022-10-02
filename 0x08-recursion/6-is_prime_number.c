@@ -11,7 +11,7 @@ int find_prime(int x, int y)
 	if (x <= 1 || x % y == 0)
 		return (0);
 	else if (x == y)
-		return 1;
+		return (1);
 	else if (x > y)
 	{
 		find_prime(x, y + 1);
