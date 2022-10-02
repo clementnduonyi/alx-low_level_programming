@@ -1,15 +1,16 @@
 #include "main.h"
 /**
  * pdrom_checker - Check for a string with same reversed meaning
- * @left_most: character at index 0
- * @right_most: character at last index
+ * @i: character at index 0
+ * @len: character at last index
+ * @str: String
  *
  * Return 1 or 0
  */
 int pdrom_checker(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
-			return (pdrom_checker(str, len - 1, i + 1));
+		return (pdrom_checker(str, len - 1, i + 1));
 	if(str[i] != str[len])
 		return (0);
 	return (1);
@@ -23,7 +24,7 @@ int pdrom_checker(char *str, int len, int i)
  * Return: an integer that displays the length of the string
  */
 int _strlen_recursion(char *s)
-{	
+{
 	if (*s != '\0')
 		return (1 + _strlen_recursion(s + 1));
 	return (0);
