@@ -5,13 +5,13 @@
  * @len: character at last index
  * @str: String
  *
- * Return 1 or 0
+ * Return: 1 or 0
  */
 int pdrom_checker(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
 		return (pdrom_checker(str, len - 1, i + 1));
-	if(str[i] != str[len])
+	if (str[i] != str[len])
 		return (0);
 	return (1);
 }
