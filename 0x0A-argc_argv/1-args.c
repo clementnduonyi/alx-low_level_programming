@@ -10,8 +10,11 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
 	if (argv)
-		printf("%d\n", argc);
+	for (i = 1; i <= argc; i++)
+	{}
+	printf("%d\n", i - 2);
 
 	return (0);
 }	
