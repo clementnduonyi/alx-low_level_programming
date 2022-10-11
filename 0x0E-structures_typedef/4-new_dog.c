@@ -39,7 +39,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *new_d;
 	char *cpyn;
 	char *cpyo;
-	
+
 	new_d = malloc(sizeof(dog_t));
 	if (new_d == NULL)
 		return (NULL);
@@ -50,13 +50,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	cpyo = _strcpy(owner);
-       if (!cpyo && owner)
-       {
-	       free(new_d);
-	       free(cpyn);
-	       return (NULL);
-       }	       
-
+	if (!cpyo && owner)
+	{
+		free(new_d);
+		free(cpyn);
+		return (NULL);
+	}
 	new_d->name = cpyn;
 	new_d->age = age;
 	new_d->owner = cpyo;
