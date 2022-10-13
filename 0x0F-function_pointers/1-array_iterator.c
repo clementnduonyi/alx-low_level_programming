@@ -18,7 +18,7 @@
 
 	if (!array || !action)
 		return;
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 		p(array[i]);
 }
 		
