@@ -6,7 +6,7 @@
  * to perform the operation asked by the user.
  * @s: The operator passed as argument
  *
- * Return: NULL
+ * Return: nothing
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -21,10 +21,12 @@ int (*get_op_func(char *s))(int, int)
 
 	int i;
 
-	for (i = 0; i < 5; i++)
+	i = 0;
+	while (i < 5)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
+		i++;
 	}
 	return (NULL);
 }
