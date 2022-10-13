@@ -9,7 +9,7 @@
  *
  * Return: Nothing
  */
- void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 	void (*p)(int);
@@ -20,5 +20,4 @@
 		return;
 	for (i = 0; i < size; i++)
 		p(array[i]);
-}
-		
+}	
